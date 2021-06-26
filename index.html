@@ -1,0 +1,142 @@
+<html>
+
+<head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <div id="chart">
+        <div id="mainPie" class="pieBox">
+            <svg width="1000" height="1000">
+            <g transform="translate(500,500)">
+                <defs>
+                    <pattern id="imgpattern-1" width="10" height="10">
+                        <rect id='pattern-rect-1' x="-0.506" fill="darkslategrey" width="501.107" height="500" class="background"/>
+                        <image  width="120" x="50" y="0" height="250" xlink:href="book-keeping512.png"/>
+                    </pattern>
+
+                    <pattern id="imgpattern-2" width="10" height="10">
+                        <rect id='pattern-rect-2' x="-0.506" fill="darkslategrey" width="501.107" height="500" class="background"/>
+                        <image  width="120" x="50" y="25" height="250" xlink:href="tax512.png"/>
+                    </pattern>
+
+                    <pattern id="imgpattern-3" width="10" height="10">
+                        <rect id='pattern-rect-3' x="-0.506" fill="darkslategrey" width="501.107" height="500" class="background"/>
+                        <image  width="120" x="65" y="-5" height="250" xlink:href="business-advisory512.png"/>
+                    </pattern>
+
+                    <pattern id="imgpattern-4" width="10" height="10">
+                        <rect id='pattern-rect-4' x="-0.506" fill="darkslategrey" width="501.107" height="500" class="background"/>
+                        <image  width="120" x="75" y="-5" height="250" xlink:href="payroll512.png"/>
+                    </pattern>
+
+                    <pattern id="imgpattern-5" width="10" height="10">
+                        <rect id='pattern-rect-5' x="-0.506" fill="darkslategrey" width="501.107" height="500" class="background"/>
+                        <image  width="120" x="80" y="-25" height="250" xlink:href="compliance512.png"/>
+                    </pattern>
+
+                    <pattern id="imgpattern-6" width="10" height="10">
+                        <rect id='pattern-rect-6' x="-0.506" fill="darkslategrey" width="501.107" height="500" class="background"/>
+                        <image  width="120" x="45" y="20" height="250" xlink:href="mortage.png"/>
+                    </pattern>
+
+                    <pattern id="imgpattern-7" width="10" height="10">
+                        <rect id='pattern-rect-7' x="-0.506" fill="darkslategrey" width="501.107" height="500" class="background"/>
+                        <image  width="120" x="95" y="0" height="250" xlink:href="finance.png"/>
+                    </pattern>
+
+                    <filter id="drop-shadow" height="130%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur">
+                        </feGaussianBlur><feOffset in="blur" dx="3" dy="3" result="offsetBlur">
+
+                        </feOffset>
+                        <feMerge>
+                            <feMergeNode in="offsetBlur">
+
+                            </feMergeNode>
+                            <feMergeNode in="SourceGraphic">
+
+                            </feMergeNode>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <g class="arc" onmouseover="onMouseEnterInArc(this, 'arc-path-1', 'pattern-rect-1','700', '170', 'Accounting & Bookkeeping')" onmouseout="onMouseLeaveingArc(this, 'arc-path-1', 'pattern-rect-1')" >
+                    <path fill="url(#imgpattern-1)" class="arc-path-1" d="M1.979845658621554e-14,-323.3333333333333A323.3333333333333,323.3333333333333 0 0,1 252.79217933132958,-201.59503593432385L104.24419766240395,-83.13197358116447A133.33333333333331,133.33333333333331 0 0,0 8.164311994315688e-15,-133.33333333333331Z" stroke="none" stroke-width="0px" transform="translate(0.2,0)">
+                    </path>
+                    <!-- <text transform="translate(126.39608764648439 -203.23265838623047)" fill="white" font-size="15">owais</text> -->
+                </g>
+                <g class="arc" onmouseover="onMouseEnterInArc(this, 'arc-path-2','pattern-rect-2','900', '370', 'Taxation & Compliance')" onmouseout="onMouseLeaveingArc(this, 'arc-path-2', 'pattern-rect-2')" >
+                    <path fill="url(#imgpattern-2)" class="arc-path-2" d="M252.79217933132958,-201.59503593432385A323.3333333333333,323.3333333333333 0 0,1 315.22669160545627,71.94843531254158L129.9903882909098,29.669457860841884A133.33333333333331,133.33333333333331 0 0,0 104.24419766240395,-83.13197358116447Z"  stroke="none" stroke-width="0px" transform="translate(0,0)">
+                    </path>
+                </g>
+
+                <g class="arc" onmouseover="onMouseEnterInArc(this, 'arc-path-3','pattern-rect-3','800', '570', 'Business & Risk Advisory')" onmouseout="onMouseLeaveingArc(this, 'arc-path-3', 'pattern-rect-3')" >
+                    <path fill="url(#imgpattern-3)" class="arc-path-3" d="M315.22669160545627,71.94843531254158A323.3333333333333,323.3333333333333 0 0,1 140.2890756480106,291.31326728844874L57.85116521567447,120.12918238698917A133.33333333333331,133.33333333333331 0 0,0 129.9903882909098,29.669457860841884Z"  stroke="none" stroke-width="0px" transform="translate(0,0)">
+                    </path>
+                </g>
+
+                <g class="arc" onmouseover="onMouseEnterInArc(this, 'arc-path-4','pattern-rect-4','620', '620', 'Payroll')" onmouseout="onMouseLeaveingArc(this, 'arc-path-4', 'pattern-rect-4')" >
+                    <path  fill="url(#imgpattern-4)" class="arc-path-4" d="M140.2890756480106,291.31326728844874A323.3333333333333,323.3333333333333 0 0,1 -140.2890756480103,291.3132672884489L-57.85116521567435,120.12918238698923A133.33333333333331,133.33333333333331 0 0,0 57.85116521567447,120.12918238698917Z"  stroke="none" stroke-width="0px" transform="translate(0,0)">
+                    </path>
+                </g>
+                 
+                <g class="arc" onmouseover="onMouseEnterInArc(this, 'arc-path-5','pattern-rect-5','320', '600', 'SMSF Administration & Compliance')" onmouseout="onMouseLeaveingArc(this, 'arc-path-5', 'pattern-rect-5')" >
+                    <path fill="url(#imgpattern-5)" class="arc-path-5" d="M-140.2890756480103,291.3132672884489A323.3333333333333,323.3333333333333 0 0,1 -315.2266916054562,71.94843531254197L-129.99038829090978,29.669457860842048A133.33333333333331,133.33333333333331 0 0,0 -57.85116521567435,120.12918238698923Z"  stroke="none" stroke-width="0px" transform="translate(0,0)">
+                    </path>
+                </g>
+
+                <g class="arc" onmouseover="onMouseEnterInArc(this, 'arc-path-6','pattern-rect-6','350', '350', 'Mortage Broking')" onmouseout="onMouseLeaveingArc(this, 'arc-path-6', 'pattern-rect-6')" >
+                    <path fill="url(#imgpattern-6)" class="arc-path-6" d="M-315.2266916054562,71.94843531254197A323.3333333333333,323.3333333333333 0 0,1 -252.79217933132983,-201.59503593432356L-104.24419766240405,-83.13197358116435A133.33333333333331,133.33333333333331 0 0,0 -129.99038829090978,29.669457860842048Z"  stroke="none" stroke-width="0px" transform="translate(0,0)">
+                    </path>
+                </g>
+
+                <g class="arc" onmouseover="onMouseEnterInArc(this, 'arc-path-7','pattern-rect-7','500', '200', 'Financial Planning')" onmouseout="onMouseLeaveingArc(this, 'arc-path-7', 'pattern-rect-7')" >
+                    <path fill="url(#imgpattern-7)" class="arc-path-7" d="M-252.79217933132983,-201.59503593432356A323.3333333333333,323.3333333333333 0 0,1 -3.4657305879502043e-13,-323.3333333333333L-1.4291672527629707e-13,-133.33333333333331A133.33333333333331,133.33333333333331 0 0,0 -104.24419766240405,-83.13197358116435Z"  stroke="none" stroke-width="0px" transform="translate(0,0)">
+                    </path>
+                </g>
+               
+                <circle fill="white" stroke="rgb(36, 48, 155)"  stroke-width="3" r="100">
+                </circle>
+                <text style="stroke: #000;">
+                    <textPath xlink:href="#text-path" >SVG Text on a linear path </textPath>
+                </text>
+                <text transform="translate(0,20)" text-anchor="middle" style="fill: rgb(36, 48, 155); font-size: 58px; font-weight: bold;">F&Co.</text>
+            </g>
+        </svg>
+        </div>
+    </div>
+    <div id="mainTooltip" class="hidden">
+        <p><span id="value"></span></p>
+    </div>
+
+</body>
+
+
+<script>
+    let backgroundColor = 'darkslategrey';
+    let onHoverBackgroundColor = 'rgb(29, 59, 104)';
+
+    function onMouseEnterInArc(element, path, className, left, top, fieldName) {
+        onHoverSettings(path, className, left, top, fieldName);
+    }
+
+    function onHoverSettings(path, className, left, top, fieldName) {
+        document.getElementById(className).style.fill = onHoverBackgroundColor;
+        document.getElementById('mainTooltip').style.display = "block";
+        document.getElementById('mainTooltip').style.left = `${left}px`;
+        document.getElementById('mainTooltip').style.top = `${top}px`;
+        document.getElementById('value').innerHTML = fieldName;
+    }
+
+    function onMouseLeaveingArc(element, path, className) {
+        document.getElementById('mainTooltip').style.display = "none";
+        document.getElementById(className).style.fill = backgroundColor;
+    }
+</script>
+
+</html>

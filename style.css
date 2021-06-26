@@ -104,7 +104,7 @@
     stroke-width: "2px";
 }
 
-.arc-path7:hover {
+.arc-path-7:hover {
     transform: scale(1.1);
     filter: url(#drop-shadow);
     stroke: "#fff";

@@ -1,3 +1,5 @@
+/*  donut css */
+
 #chart {
     text-align: center;
     padding-top: 50px;
@@ -8,54 +10,13 @@
     text-anchor: middle;
 }
 
-.arc:hove {
+.arc:hover {
     background-color: black;
 }
 
 .pieBox {
     display: inline-block;
     height: auto;
-}
-
-#mainTooltip {
-    position: absolute;
-    min-width: 280px;
-    height: 40px;
-    padding: 0 0 25px 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 50px;
-    -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
-    pointer-events: none;
-    fill: #fff;
-    color: #fff;
-    text-anchor: middle;
-    text-align: center;
-    font-weight: bold;
-    z-index: 9999;
-}
-
-#mainTooltip:before {
-    border: solid;
-    border-color: rgba(0, 0, 0, 0.6) transparent;
-    border-width: 10px 10px 0 10px;
-    top: 100%;
-    content: "";
-    left: 43%;
-    position: absolute;
-    z-index: 99;
-}
-
-#value {
-    text-anchor: middle;
-}
-
-#mainTooltip.hidden {
-    display: none;
 }
 
 .arc path {
@@ -110,3 +71,172 @@
     stroke: "#fff";
     stroke-width: "2px";
 }
+
+
+/* end donut css */
+
+
+/* tooltip css */
+
+#mainTooltip {
+    position: absolute;
+    min-width: 280px;
+    height: 40px;
+    padding: 0 0 25px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 50px;
+    -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    fill: #fff;
+    color: #fff;
+    text-anchor: middle;
+    text-align: center;
+    font-weight: bold;
+    z-index: 9999;
+}
+
+#mainTooltip:before {
+    border: solid;
+    border-color: rgba(0, 0, 0, 0.6) transparent;
+    border-width: 10px 10px 0 10px;
+    top: 100%;
+    content: "";
+    left: 43%;
+    position: absolute;
+    z-index: 99;
+}
+
+#value {
+    text-anchor: middle;
+}
+
+#mainTooltip.hidden {
+    display: none;
+}
+
+
+/* end tooltip css */
+
+
+/* modal css */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+
+/* The Close Button */
+
+.close-popup {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-popup:hover,
+.close-popup:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    text-align: center;
+    padding: 2px 16px;
+    background-color: darkslategrey;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: darkslategrey;
+    color: white;
+}
+
+.button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+/* end modal css */

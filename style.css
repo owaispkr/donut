@@ -23,53 +23,8 @@
     filter: none;
 }
 
-.arc-path-1:hover {
+.arc-path:hover {
     transform: scale(1.1);
-    filter: url(#drop-shadow);
-    stroke: "#fff";
-    stroke-width: "2px";
-}
-
-.arc-path-2:hover {
-    transform: scale(1.1);
-    filter: url(#drop-shadow);
-    stroke: "#fff";
-    stroke-width: "2px";
-}
-
-.arc-path-3:hover {
-    transform: scale(1.1);
-    filter: url(#drop-shadow);
-    stroke: "#fff";
-    stroke-width: "2px";
-}
-
-.arc-path-4:hover {
-    transform: scale(1.1);
-    filter: url(#drop-shadow);
-    stroke: "#fff";
-    stroke-width: "2px";
-}
-
-.arc-path-5:hover {
-    transform: scale(1.1);
-    filter: url(#drop-shadow);
-    stroke: "#fff";
-    stroke-width: "2px";
-}
-
-.arc-path-6:hover {
-    transform: scale(1.1);
-    filter: url(#drop-shadow);
-    stroke: "#fff";
-    stroke-width: "2px";
-}
-
-.arc-path-7:hover {
-    transform: scale(1.1);
-    filter: url(#drop-shadow);
-    stroke: "#fff";
-    stroke-width: "2px";
 }
 
 
@@ -83,24 +38,20 @@
     min-width: 280px;
     height: 40px;
     padding: 0 0 25px 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -o-border-radius: 5px;
     border-radius: 50px;
-    -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
     pointer-events: none;
     fill: #fff;
     color: #fff;
     text-anchor: middle;
     text-align: center;
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #008CCA;
     z-index: 9999;
 }
 
-#mainTooltip:before {
+
+/* #mainTooltip:before {
     border: solid;
     border-color: rgba(0, 0, 0, 0.6) transparent;
     border-width: 10px 10px 0 10px;
@@ -109,14 +60,14 @@
     left: 43%;
     position: absolute;
     z-index: 99;
-}
+} */
 
 #value {
     text-anchor: middle;
 }
 
 #mainTooltip.hidden {
-    display: none;
+    display: display;
 }
 
 
